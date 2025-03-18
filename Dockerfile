@@ -1,12 +1,13 @@
-# Building application
-FROM gradle:7.6-jdk11 AS builder
-WORKDIR /home/gradle/app
-COPY . . 
-RUN gradle build --no-daemon
+# Use a base image with Java pre-installed, e.g., OpenJDK
+FROM openjdk:11-jdk-slim
 
-FROM openjdk:8-jre-alpine
 WORKDIR /app
 
-COPY --from=builder /home/gradle/app/build/libs/*.jar app.jar
-EXPOSE 8080
-CMD ["java", "-jar", "app.jar"]
+COPY . /app
+
+RUN chmod +x gradlew
+
+EXPOSE 8080 
+# Install any dependencies (if necessary, e.g., for Gradle or Java)
+RUN apt-get update 
+CMD ["./gradlew", "apprun"]
