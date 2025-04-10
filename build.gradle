@@ -275,7 +275,7 @@ sonarqube {
         property "sonar.junit.reportPaths", "build/test-results/test/,build/test-results/integrate"
         property "sonar.coverage.jacoco.xmlReportPaths", "build/jacoco/jacoco.xml"
 
-        property "sonar.password", "Hunter3284!!"
+        
         property "sonar.host.url", "http://localhost:9000/"
         property "sonar.login", "squ_b4477e0e49886be519c4465477ddeffa2b7795a9"
     }
