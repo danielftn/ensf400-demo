@@ -276,7 +276,7 @@ sonarqube {
         property "sonar.coverage.jacoco.xmlReportPaths", "build/jacoco/jacoco.xml"
 
         
-        property "sonar.host.url", "http://localhost:9000/"
+        property "sonar.host.url", "https://ubiquitous-invention-4j7rp99wx59p374gp-9000.app.github.dev/"
         property "sonar.login", "squ_b4477e0e49886be519c4465477ddeffa2b7795a9"
     }
 }
