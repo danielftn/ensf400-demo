@@ -276,7 +276,7 @@ sonarqube {
         property "sonar.coverage.jacoco.xmlReportPaths", "build/jacoco/jacoco.xml"
         property "sonar.login", "admin"
         property "sonar.password", "password"
-        property "sonar.login", "sqp_69e0c7712de14f0073ed116f2a06ee558dc1d38d"
+        property "sonar.login", "sqa_fe22254f76cb8bf4df1f88f50f56ca72c06dcab1"
     }
 }
 
