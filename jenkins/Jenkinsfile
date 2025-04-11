@@ -68,10 +68,10 @@ pipeline {
       steps {
         withSonarQubeEnv('ensf400-demo-app'){
           sh './gradlew sonarqube --stacktrace'
+        }
         // wait for sonarqube to finish its analysis
         sleep 5
         sh './gradlew checkQualityGate'
-        }
       }
     }
 
